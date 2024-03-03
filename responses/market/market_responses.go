@@ -3,6 +3,7 @@ package market
 import (
 	"github.com/amir-the-h/okex/models/market"
 	"github.com/amir-the-h/okex/responses"
+	kmarket "github.com/maxkaneco/okex/models/market"
 )
 
 type (
@@ -20,7 +21,7 @@ type (
 	}
 	Candle struct {
 		responses.Basic
-		Candles []*market.Candle `json:"data,omitempty"`
+		Candles []*kmarket.Candle `json:"data,omitempty"`
 	}
 	IndexCandle struct {
 		responses.Basic
